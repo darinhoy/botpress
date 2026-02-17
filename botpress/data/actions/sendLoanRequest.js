@@ -11,7 +11,7 @@ const sendLoanRequest = async (state, event) => {
     });
     state.loanResponse = response.data.message;
   } catch (err) {
-    state.loanResponse = '❌ Failed to send loan request.';
+    state.loanResponse = '❌Failed to send loan request.';
     console.error(err);
   }
   return state;
